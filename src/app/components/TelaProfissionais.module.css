@@ -1,4 +1,4 @@
-.container {
+/* .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,5 +65,86 @@
   
   .voltar:hover {
     color: black;
+  } */
+  
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1e3a8a, #2563eb); /* Azul degradê bonito */
+    color: white;
+  }
+  
+  .titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .card {
+    background: white;
+    color: #1e293b; /* Azul bem escuro para texto */
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .imagem {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 9999px;
+    margin-bottom: 0.5rem;
+    border: 3px solid #2563eb; /* Borda azul */
+  }
+  
+  .nome {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .botao {
+    background-color: #ef4444; /* Vermelho botão */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .botao:hover {
+    background-color: #dc2626;
+  }
+  
+  .voltar {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #e0e0e0;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .voltar:hover {
+    color: white;
   }
   

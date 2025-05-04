@@ -1,0 +1,455 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/TelaBoasVindas.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+.TelaBoasVindas_container_principal__2O8kM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .TelaBoasVindas_titulo__ZpX3V {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .TelaBoasVindas_paragrafo__cPUKi {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .TelaBoasVindas_botao__BTdda {
+    background-color: #ff4757;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .TelaBoasVindas_botao__BTdda:hover {
+    background-color: #e84118;
+  }
+  
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/TelaServicos.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.TelaServicos_container__jToVz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    padding: 20px;
+  }
+  
+  .TelaServicos_titulo__use9s {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .TelaServicos_lista_servicos__YdP6w {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .TelaServicos_card_servico__UPdLC {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .TelaServicos_card_servico__UPdLC:hover {
+    transform: translateY(-5px);
+  }
+  
+  .TelaServicos_nome_servico__xXvH8 {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .TelaServicos_preco_servico__A_xMS {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .TelaServicos_botao_servico__7Tfv7 {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .TelaServicos_botao_servico__7Tfv7:hover {
+    background-color: #e60000;
+  }
+  
+  .TelaServicos_botao_voltar__kBflo {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: color 0.2s ease;
+  }
+  
+  .TelaServicos_botao_voltar__kBflo:hover {
+    color: #ffcccc;
+  }
+  
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/TelaProfissionais.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+/* .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  
+  .titulo {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imagem {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 9999px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .nome {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .botao {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .botao:hover {
+    background-color: #333;
+  }
+  
+  .voltar {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #555;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .voltar:hover {
+    color: black;
+  } */
+  
+
+  .TelaProfissionais_container__ArNqD {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1e3a8a, #2563eb); /* Azul degradê bonito */
+    color: white;
+  }
+  
+  .TelaProfissionais_titulo__ZqzKy {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .TelaProfissionais_grid__yoyQT {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .TelaProfissionais_card__gsIpL {
+    background: white;
+    color: #1e293b; /* Azul bem escuro para texto */
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .TelaProfissionais_card__gsIpL:hover {
+    transform: scale(1.05);
+  }
+  
+  .TelaProfissionais_imagem__NNby3 {
+    width: 100px;
+    height: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 9999px;
+    margin-bottom: 0.5rem;
+    border: 3px solid #2563eb; /* Borda azul */
+  }
+  
+  .TelaProfissionais_nome__6rC9X {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .TelaProfissionais_botao__jQOoG {
+    background-color: #ef4444; /* Vermelho botão */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .TelaProfissionais_botao__jQOoG:hover {
+    background-color: #dc2626;
+  }
+  
+  .TelaProfissionais_voltar__jJv6w {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #e0e0e0;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .TelaProfissionais_voltar__jJv6w:hover {
+    color: white;
+  }
+  
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/TelaHorarios.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+/* .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #1e3a8a, #3b82f6);
+    color: white;
+  }
+  
+  .titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .diasContainer {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+  }
+  
+  .diaBotao {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .diaBotaoSelecionado {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  .selectHorario {
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 2rem;
+    color: #1e293b;
+  }
+  
+  .botoesContainer {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .botaoVoltar, .botaoContinuar {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .botaoVoltar {
+    background-color: #9ca3af;
+    color: white;
+  }
+  
+  .botaoVoltar:hover {
+    background-color: #6b7280;
+  }
+  
+  .botaoContinuar {
+    background-color: #22c55e;
+    color: white;
+  }
+  
+  .botaoContinuar:hover {
+    background-color: #16a34a;
+  } */
+  
+
+  .TelaHorarios_container__7zrgc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1e3a8a, #3b82f6);
+  }
+  
+  .TelaHorarios_titulo__Ase0X {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .TelaHorarios_scrollDias__Pp_bi {
+    display: flex;
+    overflow-x: auto;
+    padding: 1rem 0;
+    gap: 1rem;
+    max-width: 100%;
+  }
+  
+  .TelaHorarios_botaoDia__HVQ1N {
+    padding: 0.75rem 1rem;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .TelaHorarios_botaoDiaSelecionado__JUWbx {
+    background-color: #ef4444;
+    color: white;
+    border: 2px solid #ef4444;
+  }
+  
+  .TelaHorarios_selecioneHorario__EqWRw {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .TelaHorarios_selectHorario__zN8jq {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 200px;
+  }
+  
+  .TelaHorarios_botoesAcoes__Dmeja {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .TelaHorarios_botaoVoltar__7F9hD {
+    background-color: #9ca3af;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .TelaHorarios_botaoVoltar__7F9hD:hover {
+    background-color: #6b7280;
+  }
+  
+  .TelaHorarios_botaoContinuar__o8JiI {
+    background-color: #10b981;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .TelaHorarios_botaoContinuar__o8JiI:hover {
+    background-color: #059669;
+  }
+  

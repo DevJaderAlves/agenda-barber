@@ -1,0 +1,173 @@
+/* .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #1e3a8a, #3b82f6);
+    color: white;
+  }
+  
+  .titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .diasContainer {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+  }
+  
+  .diaBotao {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .diaBotaoSelecionado {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  .selectHorario {
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 2rem;
+    color: #1e293b;
+  }
+  
+  .botoesContainer {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .botaoVoltar, .botaoContinuar {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .botaoVoltar {
+    background-color: #9ca3af;
+    color: white;
+  }
+  
+  .botaoVoltar:hover {
+    background-color: #6b7280;
+  }
+  
+  .botaoContinuar {
+    background-color: #22c55e;
+    color: white;
+  }
+  
+  .botaoContinuar:hover {
+    background-color: #16a34a;
+  } */
+  
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1e3a8a, #3b82f6);
+  }
+  
+  .titulo {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .scrollDias {
+    display: flex;
+    overflow-x: auto;
+    padding: 1rem 0;
+    gap: 1rem;
+    max-width: 100%;
+  }
+  
+  .botaoDia {
+    padding: 0.75rem 1rem;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .botaoDiaSelecionado {
+    background-color: #ef4444;
+    color: white;
+    border: 2px solid #ef4444;
+  }
+  
+  .selecioneHorario {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .selectHorario {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 200px;
+  }
+  
+  .botoesAcoes {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .botaoVoltar {
+    background-color: #9ca3af;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .botaoVoltar:hover {
+    background-color: #6b7280;
+  }
+  
+  .botaoContinuar {
+    background-color: #10b981;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .botaoContinuar:hover {
+    background-color: #059669;
+  }
+  
