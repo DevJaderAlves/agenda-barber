@@ -1,13 +1,15 @@
+
 "use client";
+import styles from "./TelaConfirmacao.module.css"; // puxando seu novo CSS
 
 export default function TelaConfirmacao({ dados, onVoltar, onConfirmar }) {
   const { servico, profissional, horario, cliente } = dados;
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 text-center">
-      <h2 className="text-2xl font-bold mb-6">Confirmação do Agendamento</h2>
+    <div className={styles.container}>
+      <h2 className={styles.titulo}>Confirmação do Agendamento</h2>
 
-      <div className="bg-gray-100 p-6 rounded-lg shadow w-full max-w-md text-left mb-6">
+      <div className={styles.cartao}>
         <p><strong>Serviço:</strong> {servico.nome}</p>
         <p><strong>Profissional:</strong> {profissional.nome}</p>
         <p><strong>Horário:</strong> {horario}</p>
@@ -15,21 +17,16 @@ export default function TelaConfirmacao({ dados, onVoltar, onConfirmar }) {
         <p><strong>Telefone:</strong> {cliente.telefone}</p>
       </div>
 
-      <div className="flex gap-4">
-        <button
-          onClick={onVoltar}
-          className="text-sm text-gray-700 underline hover:text-black"
-        >
+      <div className={styles.botoes}>
+        <button onClick={onVoltar} className={styles.botaoVoltar}>
           ← Voltar
         </button>
 
-        <button
-          onClick={onConfirmar}
-          className="bg-black text-white px-6 py-2 rounded hover:bg-gray-800"
-        >
+        <button onClick={onConfirmar} className={styles.botaoConfirmar}>
           Confirmar
         </button>
       </div>
     </div>
   );
 }
+

@@ -1,0 +1,21 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/page",{
+
+/***/ "(app-pages-browser)/./src/app/components/TelaDadosClientes.module.css":
+/*!*********************************************************!*\
+  !*** ./src/app/components/TelaDadosClientes.module.css ***!
+  \*********************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+eval(__webpack_require__.ts("// extracted by mini-css-extract-plugin\nmodule.exports = {\"container\":\"TelaDadosClientes_container__o4CKd\",\"titulo\":\"TelaDadosClientes_titulo__hX2qx\",\"formulario\":\"TelaDadosClientes_formulario__woZme\",\"campo\":\"TelaDadosClientes_campo___I6Qo\",\"input\":\"TelaDadosClientes_input__2gGZq\",\"telefoneWrapper\":\"TelaDadosClientes_telefoneWrapper__YbUBW\",\"prefixoTelefone\":\"TelaDadosClientes_prefixoTelefone__lTOUU\",\"inputTelefone\":\"TelaDadosClientes_inputTelefone___4_Bg\",\"botoes\":\"TelaDadosClientes_botoes__vcCjw\",\"botaoVoltar\":\"TelaDadosClientes_botaoVoltar__ZMj5X\",\"botaoContinuar\":\"TelaDadosClientes_botaoContinuar__JnJkk\"};\n    if(true) {\n      // 1746395532238\n      var cssReload = __webpack_require__(/*! ./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js */ \"(app-pages-browser)/./node_modules/next/dist/compiled/mini-css-extract-plugin/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"/_next/\",\"esModule\":false,\"locals\":true});\n      module.hot.dispose(cssReload);\n      \n    }\n  \nmodule.exports.__checksum = \"3b01309be55c\"\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL3NyYy9hcHAvY29tcG9uZW50cy9UZWxhRGFkb3NDbGllbnRlcy5tb2R1bGUuY3NzIiwibWFwcGluZ3MiOiJBQUFBO0FBQ0Esa0JBQWtCO0FBQ2xCLE9BQU8sSUFBVTtBQUNqQjtBQUNBLHNCQUFzQixtQkFBTyxDQUFDLHdNQUFzSCxjQUFjLHNEQUFzRDtBQUN4TixNQUFNLFVBQVU7QUFDaEI7QUFDQTtBQUNBO0FBQ0EseUJBQXlCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vX05fRS8uL3NyYy9hcHAvY29tcG9uZW50cy9UZWxhRGFkb3NDbGllbnRlcy5tb2R1bGUuY3NzP2QyMmIiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5tb2R1bGUuZXhwb3J0cyA9IHtcImNvbnRhaW5lclwiOlwiVGVsYURhZG9zQ2xpZW50ZXNfY29udGFpbmVyX19vNENLZFwiLFwidGl0dWxvXCI6XCJUZWxhRGFkb3NDbGllbnRlc190aXR1bG9fX2hYMnF4XCIsXCJmb3JtdWxhcmlvXCI6XCJUZWxhRGFkb3NDbGllbnRlc19mb3JtdWxhcmlvX193b1ptZVwiLFwiY2FtcG9cIjpcIlRlbGFEYWRvc0NsaWVudGVzX2NhbXBvX19fSTZRb1wiLFwiaW5wdXRcIjpcIlRlbGFEYWRvc0NsaWVudGVzX2lucHV0X18yZ0dacVwiLFwidGVsZWZvbmVXcmFwcGVyXCI6XCJUZWxhRGFkb3NDbGllbnRlc190ZWxlZm9uZVdyYXBwZXJfX1liVUJXXCIsXCJwcmVmaXhvVGVsZWZvbmVcIjpcIlRlbGFEYWRvc0NsaWVudGVzX3ByZWZpeG9UZWxlZm9uZV9fbFRPVVVcIixcImlucHV0VGVsZWZvbmVcIjpcIlRlbGFEYWRvc0NsaWVudGVzX2lucHV0VGVsZWZvbmVfX180X0JnXCIsXCJib3RvZXNcIjpcIlRlbGFEYWRvc0NsaWVudGVzX2JvdG9lc19fdmNDandcIixcImJvdGFvVm9sdGFyXCI6XCJUZWxhRGFkb3NDbGllbnRlc19ib3Rhb1ZvbHRhcl9fWk1qNVhcIixcImJvdGFvQ29udGludWFyXCI6XCJUZWxhRGFkb3NDbGllbnRlc19ib3Rhb0NvbnRpbnVhcl9fSm5Ka2tcIn07XG4gICAgaWYobW9kdWxlLmhvdCkge1xuICAgICAgLy8gMTc0NjM5NTUzMjIzOFxuICAgICAgdmFyIGNzc1JlbG9hZCA9IHJlcXVpcmUoXCJDOi9Vc2Vycy9KYWRlci9EZXNrdG9wL2Zyb250LWVuZC9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2NvbXBpbGVkL21pbmktY3NzLWV4dHJhY3QtcGx1Z2luL2htci9ob3RNb2R1bGVSZXBsYWNlbWVudC5qc1wiKShtb2R1bGUuaWQsIHtcInB1YmxpY1BhdGhcIjpcIi9fbmV4dC9cIixcImVzTW9kdWxlXCI6ZmFsc2UsXCJsb2NhbHNcIjp0cnVlfSk7XG4gICAgICBtb2R1bGUuaG90LmRpc3Bvc2UoY3NzUmVsb2FkKTtcbiAgICAgIFxuICAgIH1cbiAgXG5tb2R1bGUuZXhwb3J0cy5fX2NoZWNrc3VtID0gXCIzYjAxMzA5YmU1NWNcIlxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(app-pages-browser)/./src/app/components/TelaDadosClientes.module.css\n"));
+
+/***/ })
+
+});

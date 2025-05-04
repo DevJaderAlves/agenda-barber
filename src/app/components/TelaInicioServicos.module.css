@@ -1,0 +1,64 @@
+.container_principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1d4ed8, #2563eb);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .paragrafo {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  .lista_servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .card_servico {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nome_servico {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .preco_servico {
+    font-size: 1rem;
+    color: #4b5563;
+  }
+  
+  .botao_servico {
+    background: #ef4444;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    transition: background 0.3s;
+  }
+  
+  .botao_servico:hover {
+    background: #dc2626;
+  }
+  

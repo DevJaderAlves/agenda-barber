@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -16,12 +15,11 @@ export default function Agendamentos() {
   };
 
   const deletar = async (id) => {
-    const confirmar = confirm("Deseja realmente excluir este agendamento?");
-    if (!confirmar) return;
+    if (!confirm("Deseja realmente excluir este agendamento?")) return;
 
     try {
       await axios.delete(`https://cadastrobarber.onrender.com/api/agendamentos/${id}`);
-      carregarAgendamentos(); // atualiza lista
+      carregarAgendamentos();
     } catch (err) {
       alert("Erro ao excluir agendamento.");
     }
@@ -31,76 +29,38 @@ export default function Agendamentos() {
     carregarAgendamentos();
   }, []);
 
-
-
-
-
-
-
-
-
-
-
-  
-// ...
-
-const confirmarAgendamento = async () => {
-  try {
-    await axios.post("https://cadastrobarber.onrender.com/api/agendamentos", {
-      nome: dadosCliente.nome,
-      telefone: dadosCliente.telefone,
-      servico: servicoSelecionado.nome,
-      profissional: profissionalSelecionado.nome,
-      horario: horarioSelecionado,
-    });
-
-    alert("Agendamento enviado com sucesso!");
-    setEtapa(1);
-
-  } catch (error) {
-    if (error.response && error.response.status === 409) {
-      alert("⚠️ Esse horário já está ocupado. Por favor, escolha outro.");
-      setEtapa(4); // Volta para tela de escolha de horário
-    } else {
-      alert("Erro ao enviar agendamento. Tente novamente.");
-    }
-  }
-};
-
-
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-6">Agendamentos Realizados</h1>
+    <div className="p-6 bg-gradient-to-b from-blue-600 to-blue-800 min-h-screen text-white">
+      <h1 className="text-3xl font-bold mb-6 text-center">Agendamentos Realizados</h1>
 
-      <table className="w-full text-left border-collapse">
+      <table className="w-full bg-white text-black rounded-lg shadow">
         <thead>
-          <tr className="bg-gray-200">
-            <th className="p-2">ID</th>
-            <th className="p-2">Nome</th>
-            <th className="p-2">Telefone</th>
-            <th className="p-2">Serviço</th>
-            <th className="p-2">Profissional</th>
-            <th className="p-2">Horário</th>
-            <th className="p-2">Ações</th>
+          <tr className="bg-gray-200 text-gray-700 uppercase text-sm leading-normal">
+            <th className="py-3 px-4">ID</th>
+            <th className="py-3 px-4">Nome</th>
+            <th className="py-3 px-4">Telefone</th>
+            <th className="py-3 px-4">Serviço</th>
+            <th className="py-3 px-4">Profissional</th>
+            <th className="py-3 px-4">Horário</th>
+            <th className="py-3 px-4">Ações</th>
           </tr>
         </thead>
         <tbody>
           {agendamentos.map((item) => (
-            <tr key={item.id} className="border-b">
-              <td className="p-2">{item.id}</td>
-              <td className="p-2">{item.nome}</td>
-              <td className="p-2">{item.telefone}</td>
-              <td className="p-2">{item.servico}</td>
-              <td className="p-2">{item.profissional}</td>
-              <td className="p-2">{item.horario}</td>
-              <td className="p-2">
+            <tr key={item.id} className="border-b hover:bg-gray-100">
+              <td className="py-3 px-4">{item.id}</td>
+              <td className="py-3 px-4">{item.nome}</td>
+              <td className="py-3 px-4">{item.telefone}</td>
+              <td className="py-3 px-4">{item.servico}</td>
+              <td className="py-3 px-4">{item.profissional}</td>
+              <td className="py-3 px-4">{item.horario}</td>
+              <td className="py-3 px-4">
                 <button
                   onClick={() => deletar(item.id)}
-                  className="bg-red-600 text-white px-3 py-1 rounded hover:bg-red-800"
+                  className="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded"
                 >
-                  Excluir
+                  🗑️ Excluir
                 </button>
-                {/* Botão editar pode ser adicionado depois */}
               </td>
             </tr>
           ))}
@@ -109,3 +69,4 @@ const confirmarAgendamento = async () => {
     </div>
   );
 }
+

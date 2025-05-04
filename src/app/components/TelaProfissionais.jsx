@@ -34,10 +34,7 @@ export default function TelaProfissionais({ onProximo, onVoltar, selecionarProfi
           </div>
         ))}
       </div>
-
-      <button onClick={onVoltar} className={styles.voltar}>
-        ← Voltar
-      </button>
+      <button onClick={onVoltar} className={styles.botaoVoltar}>← Voltar</button>
     </div>
   );
 }

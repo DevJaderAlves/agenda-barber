@@ -1,8 +1,8 @@
+
 'use client';
 import { useState } from "react";
 import axios from "axios";
-import TelaBoasVindas from "./components/TelaBoasVindas";
-import TelaServicos from "./components/TelaServicos";
+import TelaInicioServicos from "./components/TelaInicioServicos"; // 🚀 Importando a tela nova
 import TelaProfissionais from "./components/TelaProfissionais";
 import TelaHorarios from "./components/TelaHorarios";
 import TelaDadosCliente from "./components/TelaDadosClientes";
@@ -13,11 +13,10 @@ export default function Home() {
   const [servicoSelecionado, setServicoSelecionado] = useState(null);
   const [profissionalSelecionado, setProfissionalSelecionado] = useState(null);
   const [horarioSelecionado, setHorarioSelecionado] = useState(null);
-  const [dadosCliente, setDadosCliente] = useState({ nome: "", telefone: ""});
+  const [dadosCliente, setDadosCliente] = useState({ nome: "", telefone: "" });
 
   const proximo = () => setEtapa((prev) => prev + 1);
   const voltar = () => setEtapa((prev) => prev - 1);
-
 
   const confirmarAgendamento = async () => {
     try {
@@ -28,59 +27,62 @@ export default function Home() {
         profissional: profissionalSelecionado.nome,
         horario: horarioSelecionado,
       });
-  
+
       alert("Agendamento enviado com sucesso!");
-      setEtapa(1); // volta para a tela inicial
-  
+      setEtapa(1); // Volta para a tela inicial
+
     } catch (error) {
       console.error("Erro ao enviar agendamento:", error);
       alert("Erro ao enviar agendamento. Verifique o servidor.");
     }
   };
 
-  
-
   return (
     <>
-      {etapa === 1 && <TelaBoasVindas onProximo={proximo} />}
-      {etapa === 2 && ( 
-        <TelaServicos
-        onProximo={proximo}
-        onVoltar={voltar}
-        selecionarServico={setServicoSelecionado}
+      {etapa === 1 && (
+        <TelaInicioServicos
+          onProximo={proximo}
+          selecionarServico={setServicoSelecionado}
         />
       )}
-      {etapa === 3 && (
+
+      {etapa === 2 && (
         <TelaProfissionais
-        onProximo={proximo}
-        onVoltar={voltar}
-        selecionarProfissional={setProfissionalSelecionado}
+          onProximo={proximo}
+          onVoltar={voltar}
+          selecionarProfissional={setProfissionalSelecionado}
         />
       )}
-      {etapa === 4 && (
+
+      {etapa === 3 && (
         <TelaHorarios
-        onProximo={proximo}
-        onVoltar={voltar}
-        selecionarHorario={setHorarioSelecionado}
+          onSelecionar={({ dia, horario }) => {
+            const dataHoraCompleta = `${dia.label} às ${horario}`;
+            setHorarioSelecionado(dataHoraCompleta);
+            proximo();
+          }}
+          voltar={voltar}
         />
       )}
-      {etapa === 5 && (
+
+      {etapa === 4 && (
         <TelaDadosCliente
-        onProximo={proximo}
-        onVoltar={voltar}
-        salvarDados={setDadosCliente}
+          onProximo={proximo}
+          onVoltar={voltar}
+          salvarDados={setDadosCliente}
         />
       )}
-      {etapa === 6 && (
+
+      {etapa === 5 && (
         <TelaConfirmacao
-        dados={{
-          servico: servicoSelecionado,
-          profissional: profissionalSelecionado,
-          horario: horarioSelecionado,
-          cliente: dadosCliente,
-        }}
-        omVoltar={voltar}
-        onConfirmar={confirmarAgendamento}
+          dados={{
+            servico: servicoSelecionado,
+            profissional: profissionalSelecionado,
+            horario: horarioSelecionado,
+            cliente: dadosCliente,
+          }}
+          onVoltar={voltar}
+          onConfirmar={confirmarAgendamento}
         />
       )}
     </>

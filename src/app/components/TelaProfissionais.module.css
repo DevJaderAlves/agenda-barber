@@ -1,5 +1,4 @@
 
-
   .container {
     display: flex;
     flex-direction: column;
@@ -68,15 +67,17 @@
     background-color: #dc2626;
   }
   
-  .voltar {
+  .botaoVoltar {
+    background-color: #9ca3af;
     margin-top: 2rem;
-    font-size: 0.875rem;
-    color: #e0e0e0;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  
-  .voltar:hover {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
     color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
   }
   
+  .botaoVoltar:hover {
+    background-color: #6b7280;
+  }
